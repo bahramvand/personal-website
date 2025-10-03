@@ -1,4 +1,76 @@
 body {
-  background-color: #ffffff;
-  direction: rtl;
+  font-family: 'Roboto', 'Vazirmatn', sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #0d6efd 0%, #6610f2 50%, #fd7e14 100%);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, #6c757d 0%, #343a40 50%, #212529 100%);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.2) !important;
+}
+
+.badge {
+  font-size: 0.85em;
+}
+
+.list-unstyled li {
+  transition: color 0.3s ease;
+}
+
+.list-unstyled li:hover {
+  color: #0d6efd;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+section {
+  padding-top: 80px;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .display-3 { font-size: 2.5rem; }
+  .display-5 { font-size: 2rem; }
+  .navbar-brand { font-size: 1.2rem; }
+  section { padding-top: 70px; }
+  .card-img-top { height: 180px; }
+}
+
+@media (max-width: 576px) {
+  .display-3 { font-size: 2rem; }
+  .display-5 { font-size: 1.75rem; }
+  .lead { font-size: 1.1rem; }
+  .btn-lg { padding: 0.6rem 1.5rem; }
 }

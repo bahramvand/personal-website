@@ -1,231 +1,635 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>وبسایت شخصی من</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mohammadreza Bahramvand - Portfolio</title>
 
+    <!-- Bootstrap -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Bootstrap Icons -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Vazirmatn:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS Init -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-      defer
-    ></script>
   </head>
-  <body class="bg-light">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#home">My Portfolio</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#">
+          <i class="bi bi-code-slash me-2"></i>
+          Mohammadreza
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link px-2" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <header
+      id="home"
+      class="min-vh-100 d-flex align-items-center text-center text-light bg-gradient-primary position-relative overflow-hidden"
+    >
+      <div class="container position-relative z-2" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="images/profile.jpg"
+              alt="Profile Picture"
+              class="rounded-circle mb-4 img-fluid shadow-lg"
+              style="width: 200px; height: 200px; object-fit: cover"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-3 fw-bold mb-3">Mohammadreza Bahramvand</h1>
+            <p class="lead fs-4 mb-4">
+              Software Engineer | Focused on
+              <strong>Angular, React & TypeScript</strong><br />
+              Graduate in <strong>Computer Science</strong> from Amirkabir
+              University of Technology
+            </p>
+            <a href="#about" class="btn btn-light btn-lg px-4 me-2"
+              >Learn More</a
+            >
+            <a
+              href="files/CV.pdf"
+              class="btn btn-outline-light btn-lg px-4"
+              download
+              >Download CV</a
+            >
           </div>
         </div>
-      </nav>
+      </div>
+      <!-- Background pattern -->
+      <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+          <defs>
+            <pattern
+              id="grain"
+              width="100"
+              height="100"
+              patternUnits="userSpaceOnUse"
+            >
+              <circle cx="50" cy="50" r="1" fill="white" opacity="0.1" />
+            </pattern>
+          </defs>
+          <rect width="1000" height="1000" fill="url(#grain)" />
+        </svg>
+      </div>
     </header>
 
-    <main class="mt-5 pt-5">
-      <section id="home" class="py-5 bg-light">
-        <div class="container text-center">
-          <img
-            src="images/profile.jpg"
-            alt="Profile Picture"
-            class="rounded-circle img-fluid mb-3"
-            width="200"
-          />
-          <h1 class="mb-3">محمدرضا بهرام وند</h1>
-          <p class="lead">معرفی کوتاه از خودتون</p>
-        </div>
-      </section>
-
-      <section id="about" class="py-5">
-        <div class="container">
-          <h2 class="mb-4">About Me</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <p>اطلاعات شخصی، علاقه‌مندی‌ها و مهارت‌ها</p>
-              <ul>
-                <li>مهارت ۱</li>
-                <li>مهارت ۲</li>
-                <li>مهارت ۳</li>
-              </ul>
+    <!-- About -->
+    <section id="about" class="py-5 bg-white">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center mb-5 display-5 fw-bold">About Me</h2>
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="images/profile.jpg"
+              alt="About Me"
+              class="img-fluid rounded shadow-lg"
+              style="max-height: 400px; object-fit: cover"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p class="lead mb-4 text-muted">
+              As a passionate Software Engineer with a strong foundation in
+              Computer Science from Amirkabir University of Technology, I
+              specialize in frontend development using Angular, React, and
+              TypeScript. My journey in tech has been driven by a love for
+              creating intuitive, scalable web applications that solve
+              real-world problems. With hands-on experience in both enterprise
+              and personal projects, I thrive in collaborative environments,
+              focusing on modular architecture, performance optimization, and
+              user-centered design.
+            </p>
+            <p class="mb-4 text-muted">
+              Beyond coding, I enjoy exploring AI, data science, and open-source
+              contributions. I'm always eager to learn new technologies and
+              tackle challenging problems that push the boundaries of
+              innovation.
+            </p>
+            <div class="row g-3 mb-4">
+              <div class="col-12">
+                <h5 class="fw-bold mb-2">
+                  <i class="bi bi-gear-fill text-primary me-2"></i>Core Skills
+                </h5>
+                <div class="row g-2">
+                  <div class="col-6">
+                    <span class="badge bg-primary me-1 mb-1">Angular</span>
+                  </div>
+                  <div class="col-6">
+                    <span class="badge bg-success me-1 mb-1">React.js</span>
+                  </div>
+                  <div class="col-6">
+                    <span class="badge bg-info me-1 mb-1">TypeScript</span>
+                  </div>
+                  <div class="col-6">
+                    <span class="badge bg-warning me-1 mb-1">JavaScript</span>
+                  </div>
+                  <div class="col-6">
+                    <span class="badge bg-secondary me-1 mb-1">HTML/CSS</span>
+                  </div>
+                  <div class="col-6">
+                    <span class="badge bg-dark me-1 mb-1">Bootstrap/SASS</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <h5 class="fw-bold mb-2">
+                  <i class="bi bi-heart-fill text-danger me-2"></i>Interests
+                </h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2">
+                    <i class="bi bi-robot text-primary me-2"></i>Artificial
+                    Intelligence & Machine Learning
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-globe text-success me-2"></i>Web Development
+                    & UI/UX Design
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-graph-up text-info me-2"></i>Data Science &
+                    Analytics
+                  </li>
+                  <li>
+                    <i class="bi bi-book text-warning me-2"></i>Open-Source
+                    Contributions
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-md-6">
-              <a href="files/CV.pdf" class="btn btn-primary" download
-                >دانلود CV</a
+            <div class="text-center">
+              <a
+                href="files/CV.pdf"
+                class="btn btn-primary btn-lg px-4"
+                download
+                >Download Full CV</a
               >
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="experience" class="py-5 bg-light">
-        <div class="container">
-          <h2 class="mb-4">Experience</h2>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">تجربه ۱</h5>
-                  <p class="card-text">
-                    توضیح کوتاه درباره تجربه کاری یا تحصیلی.
-                  </p>
-                </div>
+    <!-- Experience -->
+    <section id="experience" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center mb-5 display-5 fw-bold">
+          Work Experience & Education
+        </h2>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card border-0 shadow h-100">
+              <div class="card-header bg-primary text-white">
+                <h5 class="mb-0 fw-bold">
+                  <i class="bi bi-briefcase-fill me-2"></i>Frontend Developer –
+                  Hamkaran System
+                </h5>
+                <small class="opacity-75">November 2024 – Present</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Developing enterprise-scale responsive applications and
+                  complex dashboards using Angular & TypeScript. Contributing to
+                  modular architecture, performance optimization, and
+                  implementing end-to-end testing strategies. Collaborating in
+                  agile teams to deliver high-quality, maintainable solutions.
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >State management with NgRx
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Integration with APIs and SCSS/Material UI
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>E2E
+                    testing with Cypress
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">تجربه ۲</h5>
-                  <p class="card-text">
-                    توضیح کوتاه درباره تجربه کاری یا تحصیلی.
-                  </p>
-                </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow h-100">
+              <div class="card-header bg-success text-white">
+                <h5 class="mb-0 fw-bold">
+                  <i class="bi bi-briefcase-fill me-2"></i>Frontend Developer –
+                  MagnetXT Team
+                </h5>
+                <small class="opacity-75">September 2024 – February 2025</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Built mobile-oriented applications, including landing pages
+                  and responsive dashboards, using React. Focused on creating
+                  reusable UI components and enhancing the user experience
+                  across multiple platforms.
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Component reusability and state management
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>API
+                    integration and interactive dashboards
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Optimization for mobile devices
+                  </li>
+                </ul>
               </div>
             </div>
-            <!-- می‌تونی تجربه‌های بیشتری اضافه کنی -->
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow h-100">
+              <div class="card-header bg-info text-white">
+                <h5 class="mb-0 fw-bold">
+                  <i class="bi bi-briefcase-fill me-2"></i>Frontend Developer –
+                  NORC Team
+                </h5>
+                <small class="opacity-75">September 2024 – February 2025</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Part of an agile team developing responsive dashboards and
+                  client-facing applications with React & TypeScript. Improved
+                  application performance, worked on cross-browser
+                  compatibility, and supported continuous integration.
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Performance enhancements
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >CI/CD pipelines with GitLab
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Agile workflows using Jira
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow h-100">
+              <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0 fw-bold">
+                  <i class="bi bi-mortarboard-fill me-2"></i>B.Sc. in Computer
+                  Science – Amirkabir University
+                </h5>
+                <small class="opacity-75">2021 – Present | GPA: 18.5/20</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Gained strong foundations in algorithms, software engineering,
+                  and data analysis. Worked on academic and personal projects
+                  involving frontend, backend, and statistical computing. Served
+                  as teaching assistant for courses like Algorithms, Data
+                  Structures, and Numerical Analysis.
+                </p>
+                <ul class="list-unstyled small">
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Team lead in system agents projects
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Content creation for system principles
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Mathematics teaching at high school
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card border-0 shadow h-100">
+              <div class="card-header bg-secondary text-white">
+                <h5 class="mb-0 fw-bold">
+                  <i class="bi bi-briefcase-fill me-2"></i>Early Experiences
+                </h5>
+                <small class="opacity-75"
+                  >Frontend Developer – Soha Company (Feb 2022) & Math Teacher –
+                  Ayande Sazan</small
+                >
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Gained initial hands-on experience with Angular and React in
+                  small-scale projects. Strengthened communication and
+                  problem-solving skills through teaching mathematics at high
+                  school level.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="projects" class="py-5">
-        <div class="container">
-          <h2 class="mb-4">Projects</h2>
-          <div class="row">
-            <div class="col-md-4 mb-3">
-              <div class="card h-100">
-                <img
-                  src="images/project1.jpg"
-                  class="card-img-top"
-                  alt="Project 1"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">پروژه ۱</h5>
-                  <p class="card-text">توضیح کوتاه درباره پروژه.</p>
-                  <a
-                    href="https://github.com/username/project1"
-                    class="btn btn-outline-dark"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                </div>
+    <!-- Projects -->
+    <section id="projects" class="py-5 bg-gradient-secondary text-light">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center mb-5 display-5 fw-bold">Featured Projects</h2>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 bg-dark border-0 shadow-lg text-light">
+              <img
+                src="images/homelister.jpg"
+                class="card-img-top"
+                alt="Homelister"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Homelister</h5>
+                <p class="card-text">
+                  A real estate listing management app using React and Leaflet
+                  maps. Users can register, manage, and display property ads
+                  with light/dark themes and editable data visualization.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a
+                  href="https://github.com/bahramvand/homelister"
+                  class="btn btn-outline-light w-100"
+                  target="_blank"
+                  >View on GitHub</a
+                >
               </div>
             </div>
-            <div class="col-md-4 mb-3">
-              <div class="card h-100">
-                <img
-                  src="images/project2.jpg"
-                  class="card-img-top"
-                  alt="Project 2"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">پروژه ۲</h5>
-                  <p class="card-text">توضیح کوتاه درباره پروژه.</p>
-                  <a
-                    href="https://github.com/username/project2"
-                    class="btn btn-outline-dark"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 bg-dark border-0 shadow-lg text-light">
+              <img
+                src="images/reactmeals.jpg"
+                class="card-img-top"
+                alt="ReactMeals"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">ReactMeals</h5>
+                <p class="card-text">
+                  An online food ordering site built with React, Axios,
+                  Firebase, and SCSS. Allows users to browse and order meals
+                  seamlessly.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a
+                  href="https://github.com/bahramvand/reactmeals"
+                  class="btn btn-outline-light w-100"
+                  target="_blank"
+                  >View on GitHub</a
+                >
               </div>
             </div>
-            <div class="col-md-4 mb-3">
-              <div class="card h-100">
-                <img
-                  src="images/project3.jpg"
-                  class="card-img-top"
-                  alt="Project 3"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">پروژه ۳</h5>
-                  <p class="card-text">توضیح کوتاه درباره پروژه.</p>
-                  <a
-                    href="https://github.com/username/project3"
-                    class="btn btn-outline-dark"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 bg-dark border-0 shadow-lg text-light">
+              <img
+                src="images/magnetxt.jpg"
+                class="card-img-top"
+                alt="MagnetXT"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">MagnetXT</h5>
+                <p class="card-text">
+                  Mobile-optimized frontend project with React, featuring
+                  responsive landing pages, interactive dashboards, reusable
+                  components, and state management for modern UI design.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a
+                  href="https://github.com/bahramvand/magnetxt"
+                  class="btn btn-outline-light w-100"
+                  target="_blank"
+                  >View on GitHub</a
+                >
               </div>
             </div>
-            <!-- می‌تونی تا ۷ پروژه اضافه کنی -->
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 bg-dark border-0 shadow-lg text-light">
+              <img
+                src="images/p2p-messaging.jpg"
+                class="card-img-top"
+                alt="P2P Messaging"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Peer-to-Peer Messaging</h5>
+                <p class="card-text">
+                  A Node.js-based P2P network application for peer
+                  communication, message forwarding, and user registration.
+                  Includes client-server sections for direct user connections.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a
+                  href="https://github.com/bahramvand/p2p-messaging"
+                  class="btn btn-outline-light w-100"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 bg-dark border-0 shadow-lg text-light">
+              <img
+                src="images/sales-site.jpg"
+                class="card-img-top"
+                alt="Sales Site"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Food Sales Website Design</h5>
+                <p class="card-text">
+                  Final project for AUT entrepreneurship course: A group of five
+                  designed and developed a web sales site for packaged foods
+                  using HTML, CSS, Figma for UI/UX, emphasizing effective
+                  teamwork.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a
+                  href="https://github.com/bahramvand/sales-site"
+                  class="btn btn-outline-light w-100"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 bg-dark border-0 shadow-lg text-light">
+              <img
+                src="images/academic-project.jpg"
+                class="card-img-top"
+                alt="Academic Project"
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title">AI-Driven Data Analysis</h5>
+                <p class="card-text">
+                  Academic project involving AI models for financial and
+                  meteorological data analysis using R, Python, and statistical
+                  computing techniques.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a
+                  href="https://github.com/bahramvand/ai-data-analysis"
+                  class="btn btn-outline-light w-100"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact" class="py-5 bg-light">
-        <div class="container text-center">
-          <h2 class="mb-4">Contact</h2>
-          <p>با من در ارتباط باشید:</p>
-          <div class="d-flex justify-content-center gap-3">
-            <a
-              href="https://github.com/bahramvand"
-              target="_blank"
-              class="text-dark"
-            >
-              <i class="bi bi-github fs-2"></i>
-            </a>
-            <a href="mailto:lordsedler1@gmail.com" class="text-dark">
-              <i class="bi bi-envelope fs-2"> </i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/bahramvand/"
-              target="_blank"
-              class="text-dark"
-            >
-              <i class="bi bi-linkedin fs-2"></i>
-            </a>
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-white">
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="mb-5 display-5 fw-bold">Get In Touch</h2>
+        <p class="lead mb-5 text-muted">
+          Feel free to reach out for collaborations, opportunities, or just a
+          chat about tech!
+        </p>
+        <div class="row justify-content-center g-4">
+          <div class="col-md-4">
+            <div class="card border-0 shadow h-100 p-4">
+              <i class="bi bi-envelope-fill text-primary fs-1 mb-3"></i>
+              <h5 class="fw-bold mb-2">Email</h5>
+              <p class="text-muted mb-0">lordsedler1@gmail.com</p>
+              <a
+                href="mailto:lordsedler1@gmail.com"
+                class="btn btn-outline-primary mt-3"
+                >Send Message</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow h-100 p-4">
+              <i class="bi bi-github text-dark fs-1 mb-3"></i>
+              <h5 class="fw-bold mb-2">GitHub</h5>
+              <p class="text-muted mb-0">bahramvand</p>
+              <a
+                href="https://github.com/bahramvand"
+                class="btn btn-outline-dark mt-3"
+                target="_blank"
+                >Visit Profile</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 shadow h-100 p-4">
+              <i class="bi bi-linkedin text-primary fs-1 mb-3"></i>
+              <h5 class="fw-bold mb-2">LinkedIn</h5>
+              <p class="text-muted mb-0">bahramvand</p>
+              <a
+                href="https://linkedin.com/in/bahramvand"
+                class="btn btn-outline-primary mt-3"
+                target="_blank"
+                >Connect</a
+              >
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer class="bg-dark text-light text-center py-3">
-      <p class="mb-0">&copy; 2025 محمدرضا بهرام وند | طراحی شده با ❤️</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4">
+      <div class="container">
+        <p class="mb-3">
+          &copy; 2025 Mohammadreza Bahramvand. Built with ❤️ and code.
+        </p>
+        <div class="d-flex justify-content-center gap-4">
+          <a
+            href="https://github.com/bahramvand"
+            target="_blank"
+            class="text-light"
+            ><i class="bi bi-github fs-3"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/bahramvand"
+            target="_blank"
+            class="text-light"
+            ><i class="bi bi-linkedin fs-3"></i
+          ></a>
+          <a href="mailto:lordsedler1@gmail.com" class="text-light"
+            ><i class="bi bi-envelope fs-3"></i
+          ></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
